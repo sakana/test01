@@ -9,10 +9,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        $fileDir = '/home/y/share/pear/laravel5.0/member_list.txt';
+        $fileDir = "/var/www/html/laravel5.0/members_list.log";
         $file = fopen($fileDir, 'r');
         $i = 0;
-
         // 部員
         $members = array();
 
